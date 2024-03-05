@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!----Head Section----->
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Customer Successes - Digitus</title>
+      <link rel="stylesheet" href="./assets/css/footer.css"  />
+      <link rel="stylesheet" href="./assets/css/footer_2.css" />
+      <link rel="stylesheet" href="./assets/css/secondsection.css" />
+      <link rel="stylesheet" href="./assets/css/lib/boxicons.min.css" />
+      <!-- Animation -->
+      <link rel="stylesheet" href="./assets/css/lib/aos.css" rel="stylesheet" />
+      <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href="./assets/img/digitus_favicon.jpeg">
+      <!-- Owlcarousel2 -->
+      <link rel="stylesheet" href="./assets/css/lib/owl.carousel.min.css">
+      <link rel="stylesheet" href="./assets/css/lib/owl.theme.default.min.css">
+      <!-- fontawesome -->
+      <link rel="stylesheet" href="./assets/css/lib/all.min.css" integrity="sha512-... ">
+      <!-- JQuery -->
+      <script src="./assets/script/lib/jquery-2.2.0.min.js" type="text/javascript"></script>
+      <!-- Owlcarsoul JS -->
+      <script src="./assets/script/lib/slick.js"></script>
+      <script src="./assets/script/lib/owl.carousel.min.js"></script>
+      <script src="./assets/script/lib/dotlottie-player.mjs" type="module"></script>
+      <script src="./assets/script/lib/kit_fontawe.js" crossorigin="anonymous"></script>
+      <!-- tailwind css -->
+      <script src="./assets/script/lib/tailwindcss.cdn.js"></script>
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="./assets/css/digitus_style.css" />
+   </head>
+   <!----Head Section End------->
+   <body id="body" class="bg-red-200" onscroll="handleScroll()" onresize="handleResize()">
+      <!-- -------------Header and Banner------------------------------ -->
+      <div class="firstSec header-main">
+        <!-- ------------------  Header MainMenu and Logo Start---------------------->
+        <div class="firstSectionContainer" id="firstSectionContainer">
+           <h1 class="DigitusLogo">
+               <a href="index.html"><img src="./assets/digituslogo/mainlogo.png" class="logoImage" alt="Digitus" /></a>
+           </h1>
+           <div class="bx bx-menu" id="menu-icon"></div>
+           <ul class="navmenu">
+               <li>
+                   <div class="addOption">
+                         <a class="factLikContainer" href="services.html"><span class="navBarOpt">Services</span></a>
+                       <div id="dropdown1" class="hover-target submenu absolute group-hover:transition duration-300 shadow-xl">
+                           <div class="dropdownvisible">
+                               <div class="dropdiv">
+                                   <div class="dropdownheading">
+                                       <span>Diverse digital solutions for businesses: software, IT, marketing, and more.</span>
+                                   </div>
+                                   <div class="dropdownlist">
+                                       <a style="text-decoration: none" href="erp.html">
+                                         <div class="yellowColorFontThird">ERP</div>
+                                       </a>
+                                       <a style="text-decoration: none" href="edi.html">
+                                         <div class="yellowColorFontThird">EDI</div>
+                                       </a>
+                                       <a style="text-decoration: none" href="cx.html">
+                                         <div class="yellowColorFontThird">CX</div>
+                                       </a>
+                                       <a style="text-decoration: none" href="bia.html">
+                                         <div class="yellowColorFontThird">BI & A</div>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </li>
+               <li>
+                   <div class="addOption" id="firstDropdownButton" onmouseover="showDropdown2()">
+                       <span onmouseleave="hideDropdown2()" class="navBarOpt">Expertise</span>
+                       <div onmouseleave="hideDropdown2()" id="dropdown2" class="hover-target submenu absolute group-hover:transition duration-300 shadow-xl">
+                       <div class="dropdownvisible">
+                           <div class="dropdiv">
+                               <div class="dropdownheading">
+                                   <span>Diverse digital solutions for businesses: software, IT, marketing, and more.</span>
+                               </div>
+                               <div class="dropdownlist">
+                                   <a style="text-decoration: none" href="#">
+                                   <div class="yellowColorFontThird">Technology</div>
+                                   </a>
+                                   <a style="text-decoration: none" href="#">
+                                   <div class="yellowColorFontThird">Partnership</div>
+                                   </a>
+                               </div>
+                           </div>
+                       </div>
+                       </div>
+                   </div>
+               </li>
+               <li>
+                   <div class="addOption">
+                   <a class="factLikContainer" href="#"><span class="navBarOpt">Accelerators</span></a>
+               </div>
+               </li>
+               <li>
+                   <div class="addOption">
+                       <a class="factLikContainer" href="people.html"><span class="navBarOpt">People</span></a>
+                   </div>
+               </li>
+               <li>
+                   <div class="addOption">
+                       <a class="factLikContainer" href="about_us.html"><span class="navBarOpt">About Us</span></a>
+                   </div>
+               </li>
+               <li>
+                   <div class="addOption">
+                       <a class="factLikContainer" href="contact_us.html"><span class="navBarOpt">Contact Us</span></a>
+                   </div>
+               </li>
+           </ul>
+       </div>
+       <!-- ---------------------------------------------------------Hidden Navbar for mobile device-------------------------------------------------------------- -->
+       <div class="hidden_Navbar">
+         <div data-aos="zoom-in-up" data-aos-duration="900" class="hidden_Navbar_firstSectionContainer" id="hidden_Navbar_firstSectionContainer">
+           <div id="hidden_Navbar_menu-icon">
+             <div class="bx bx-menu bx-x"></div>
+           </div>
+   
+           <h1 class="hidden_Navbar_DigitusLogo">
+             <a href="index.html"><img src="./assets/images/mainlogo.png" class="hiddenlogoImage" alt="Digitus"/></a>
+           </h1>
+   
+           <div class="hidden_navmenu">
+             <ul class="hidden_navmenu-ul">
+               <li>
+                 <button id="button_expertise" class="hidden_Navbar_button">
+                   <a href="services.html">Services</a>
+                   <i class="fa fa-caret-down hidden_Navbar_drop_icon" aria-hidden="true"></i>
+                 </button>
+                 <div id="dropdown_expertise" class="dropdown_division">
+                   <ul class="dropdown_unorderedlist">
+   
+                     <a style="text-decoration: none; color: orange" href="erp.html">
+                       <li class="yellowColorFontThird">ERP</li>
+                     </a>
+                     <a style="text-decoration: none; color: orange" href="edi.html">
+                       <li class="yellowColorFontThird">EDI</li>
+                     </a>
+                     <a style="text-decoration: none; color: orange" href="cx.html">
+                       <li class="yellowColorFontThird">CX</li>
+                     </a>
+                     <a style="text-decoration: none; color: orange" href="bia.html">
+                       <li class="yellowColorFontThird">BI & A</li>
+                     </a>
+                   </ul>
+                 </div>
+               </li>
+   
+               <li>
+                 <button id="button_solution" class="hidden_Navbar_button">
+                   <a href="#">Expertise</a>
+                   <i class="fa fa-caret-down hidden_Navbar_drop_icon" aria-hidden="true"></i>
+                 </button>
+                 <div id="dropdown_solution" class="dropdown_division">
+                   <ul class="dropdown_unorderedlist">
+   
+                     <a style="text-decoration: none; color: orange" href="#">
+                       <li class="yellowColorFontThird">Technology</li>
+                     </a>
+                     <a style="text-decoration: none; color: orange" href="#">
+                       <li class="yellowColorFontThird">Partnership</li>
+                     </a>
+   
+                   </ul>
+                 </div>
+               </li>
+   
+               <li>
+                 <button class="hidden_Navbar_button" disabled>
+                   <a href="#"> Accelators</a>
+                 </button>
+               </li>
+   
+               <li>
+                 <button class="hidden_Navbar_button" disabled>
+                   <a href="people.html"> People</a>
+                 </button>
+               </li>
+               <li>
+                 <button class="hidden_Navbar_button" disabled>
+                   <a href="about_us.html"> About Us</a>
+                 </button>
+               </li>
+               <li>
+                 <button class="hidden_Navbar_button" disabled>
+                   <a href="contact_us.html"> Contact Us</a>
+                 </button>
+               </li>
+             </ul>
+           </div>
+         </div>
+       </div>
+       <!-- ----------------hidden Navbar End Here---------------- -->
+     </div>
+     <!-- ---------------  Header MainMenu and Logo End-------------------->
+      <!-- ----------------------------------------------- First Section Visible Navbar End Here---------------------------------------------- -->
+      <!---------- OUR QAD/EDI TEAM & EXPERTISE --------------------------- -->
+        <div class="secondSection Guiding bg-white pt-0">
+         <div class="secondHeader py-4">
+            OUR QAD/EDI <span class="text-orange-400 pl-2">TEAM & EXPERTISE</span>
+         </div>
+         <div class="text-[#333] bg-gray-50 p-4 py-24">
+                <div class="max-w-6xl max-sm:max-w-sm mx-auto flex gap-16">
+                    <div class="w-3/5">
+                       <p> Our <strong class="text-orange-400">QAD/EDI Team</strong> is a very good mix of Techno-Functional consultants having a vast experience in multiple Domain & Industry, Enriched track record of Implementation, Development and Support services to global customers.</p>
+                        <div class="mt-3"> 
+                            <p>Overall Experience on QAD/EDI : <strong>213 M Years</strong></p>
+                            <p>Average Experience on QAD/EDI  : <strong>11.84 M Years</strong></p>
+                        </div>  
+                        <div class="">
+                            <strong class="text-base text-orange-300">Implementation</strong>
+                            <div class="bars mt-10">
+                                <ul class="flex gap-8 align-content-center items-end text-center">
+                                    <li class="w-16 h-16 bg-sky-700 relative shadow-inner"><span class="absolute inset-0 -top-6">4</span></li>
+                                    <li class="w-16 h-5 bg-sky-700 relative shadow-2xl"><span class="absolute inset-0 -top-6">2</span></li>
+                                    <li class="w-16 h-20 bg-sky-700 relative shadow-2xl"><span class="absolute inset-0 -top-6">5</span></li>
+                                    <li class="w-16 h-16 bg-sky-700 relative shadow-2xl"><span class="absolute inset-0 -top-6">4</span></li>
+                                    <li class="w-16 h-5 bg-sky-700 relative shadow-2xl"><span class="absolute inset-0 -top-6">2</span></li>
+                                    <li class="w-16 h-24 bg-sky-700 relative shadow-2xl"><span class="absolute inset-0 -top-6">6</span></li>
+                                </ul>
+                            </div>
+                        </div>  
+                        <div class="mt-1">
+                            <div class="bars">
+                                <ul class="flex gap-8 align-content-center items-start text-center">
+                                    <li class="w-16 h-10 text-sky-700"><span class="text-xs"><2 Years</span></li>
+                                    <li class="w-16 h-10 text-sky-700"><span class="text-xs">2-5 Years</span></li>
+                                    <li class="w-16 h-10 text-sky-700"><span class="text-xs">5-8 Years</span></li>
+                                    <li class="w-16 h-10 text-sky-700"><span class="text-xs">8-12 Years</span></li>
+                                    <li class="w-16 h-10 text-sky-700"><span class="text-xs">12-15 Years</span></li>
+                                    <li class="w-16 h-10 text-sky-700"><span class="text-xs">>15 Years </span></li>
+                                </ul>
+                            </div>
+                        </div> 
+                        <!-- Experience charts -->
+                        <div class="max-w-6xl flex gap-16">
+                            <div class="w-3/5">
+                                <h3 class="mt-2 mb-3 text-lg">Experience</h3>
+                                <div class="">
+                                    <strong class="text-base text-sky-700">By Industry</strong>
+                                    <div class="bars mt-10">
+                                        <ul class="flex gap-5 align-content-center items-end text-center">
+                                            <li class="relative shadow-inner">
+                                                <div class="w-12 h-5 bg-gray-400 text-xs text-white flex items-center justify-center">2</div>
+                                                <div class="w-12 h-12 bg-orange-400 text-xs text-white flex items-center justify-center">5</div>
+                                                <div class="w-12 h-16 bg-green-400 text-xs text-white flex items-center justify-center">6</div>
+                                                <div class="w-12 h-24 bg-sky-700 text-xs text-white flex items-center justify-center">10</div>
+                                                <div class="w-12 h-7 text-sky-700 mt-1 text-xs flex items-center justify-center">Manufacturing</div>
+                                            </li>
+                                            <li class="relative shadow-inner ">
+                                                <div class="w-12 h-6 bg-gray-400 text-xs text-white flex items-center justify-center">3</div>
+                                                <div class="w-12 h-12 bg-orange-400 text-xs text-white flex items-center justify-center">5</div>
+                                                <div class="w-12 h-16 bg-green-400 text-xs text-white flex items-center justify-center">6</div>
+                                                <div class="w-12 h-24 bg-sky-700 text-xs text-white flex items-center justify-center">10</div>
+                                                <div class="w-12 h-7 text-sky-700 mt-1 text-xs flex items-center justify-center">Hi-Tech</div>
+                                            </li>
+                                            <li class="relative shadow-inner">
+                                                <div class="w-12 h-5 bg-orange-400 text-xs text-white flex items-center justify-center">2</div>
+                                                <div class="w-12 h-8 bg-green-400 text-xs text-white flex items-center justify-center">4</div>
+                                                <div class="w-12 h-20 bg-sky-700 text-xs text-white flex items-center justify-center">8</div>
+                                                <div class="w-12 h-7 text-sky-700 mt-1 text-xs flex items-center justify-center">Retails Logistics</div>
+                                            </li>
+                                            <li class="relative shadow-inner">
+                                                <div class="w-12 h-3 bg-orange-400 text-xs text-white flex items-center justify-center">1</div>
+                                                <div class="w-12 h-5 bg-green-400 text-xs text-white flex items-center justify-center">2</div>
+                                                <div class="w-12 h-8 bg-sky-700 text-xs text-white flex items-center justify-center">4</div>
+                                                <div class="w-12 h-7 text-sky-700 mt-1 text-xs flex items-center justify-center">BFS&I</div>
+                                            </li>
+                                            <li class="relative shadow-inner">
+                                                <div class="w-12 h-5 bg-orange-400 text-xs text-white flex items-center justify-center">2</div>
+                                                <div class="w-12 h-7 bg-green-400 text-xs text-white flex items-center justify-center">3</div>
+                                                <div class="w-12 h-12 bg-sky-700 text-xs text-white flex items-center justify-center">5</div>
+                                                <div class="w-12 h-7 text-sky-700 mt-1 text-xs flex items-center justify-center">FMcG</div>
+                                            </li>
+                                            <li class="relative shadow-inner">
+                                                <div class="w-12 h-3 bg-orange-400 text-xs text-white flex items-center justify-center">1</div>
+                                                <div class="w-12 h-8 bg-green-400 text-xs text-white flex items-center justify-center">4</div>
+                                                <div class="w-12 h-7 bg-sky-700 text-xs text-white flex items-center justify-center">3</div>
+                                                <div class="w-12 h-7 text-xs text-sky-700 mt-1 flex items-center justify-center">Progress Industry</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="mt-1">
+                                        <div class="bars">
+                                            <ul class="flex gap-8 align-content-center items-start text-center">
+                                                <li class="w-16 h-10 text-sky-700"><span class="text-xs">1-5 Years</span></li>
+                                                <li class="w-16 h-10 text-sky-700"><span class="text-xs">5-10 Years</span></li>
+                                                <li class="w-16 h-10 text-sky-700"><span class="text-xs">10-15 Years</span></li>
+                                                <li class="w-16 h-10 text-sky-700"><span class="text-xs">12-15 Years</span></li>
+                                                <li class="w-16 h-10 text-sky-700"><span class="text-xs"> >15 Years </span></li>
+                                            </ul>
+                                        </div>
+                                    </div> 
+                                </div>  
+                            </div>
+                            <div class="w-2/5 pt-32">
+                                <strong class="text-base text-sky-700"># of Customers Team has worked with by Industry</strong>
+                                <div class="mt-3">
+                                    <div class="bars">
+                                        <ul class="flex gap-8 align-content-center items-start">
+                                            <li class="w-32 text-sky-700"><span class="text-xs">BFS&I</span></li>
+                                            <li class="w-6 text-sky-700"><span class="text-xs font-semibold">2</span></li>
+                                        </ul>
+                                        <ul class="flex gap-8 align-content-center items-start">
+                                            <li class="w-32 text-sky-700"><span class="text-xs">Automotive</span></li>
+                                            <li class="w-6 text-sky-700"><span class="text-xs font-semibold">14</span></li>
+                                        </ul>
+                                        <ul class="flex gap-8 align-content-center items-start">
+                                            <li class="w-32 text-sky-700"><span class="text-xs">Discrete Manufacturing</span></li>
+                                            <li class="w-6 text-sky-700"><span class="text-xs font-semibold">3</span></li>
+                                        </ul>
+                                        <ul class="flex gap-8 align-content-center items-start">
+                                            <li class="w-32 text-sky-700"><span class="text-xs">Process Manufacturing</span></li>
+                                            <li class="w-6 text-sky-700 items-end"><span class="text-xs font-semibold">3</span></li>
+                                        </ul>
+                                        <ul class="flex gap-8 align-content-center items-start">
+                                            <li class="w-32 text-sky-700"><span class="text-xs">Hi-Tech</span></li>
+                                            <li class="w-6 text-sky-700"><span class="text-xs font-semibold">5</span></li>
+                                        </ul>
+                                        <ul class="flex gap-8 align-content-center items-start">
+                                            <li class="w-32 text-sky-700"><span class="text-xs">FMCG</span></li>
+                                            <li class="w-6 text-sky-700"><span class="text-xs font-semibold">3</span></li>
+                                        </ul>
+                                        <ul class="flex gap-8 align-content-center items-start">
+                                            <li class="w-32 text-sky-700"><span class="text-xs">Pharmaceutical</span></li>
+                                            <li class="w-6 text-sky-700"><span class="text-xs font-semibold">2</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right container start -->
+                    <div class="w-2/5">
+                        <h3 class="font-semibold mb-2 text-2xl">Proficiency</h3>
+                        <div class="">
+                            <strong class="text-base text-green-600">Implementation</strong>
+                            <div class="bars mt-10">
+                                <ul class="flex gap-8 align-content-center items-end text-center">
+                                    <li class="w-16 h-5  bg-green-500 relative shadow-inner"><span class="absolute inset-0 -top-6">10%</span></li>
+                                    <li class="w-16 h-10 bg-green-500 relative shadow-2xl"><span class="absolute inset-0 -top-6">24%</span></li>
+                                    <li class="w-16 h-20 bg-green-500 relative shadow-2xl"><span class="absolute inset-0 -top-6">43%</span></li>
+                                    <li class="w-16 h-10 bg-green-500 relative shadow-2xl"><span class="absolute inset-0 -top-7">24%</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <strong class="text-base text-orange-600">Development</strong>
+                            <div class="bars mt-10">
+                                <ul class="flex gap-8 align-content-center items-end text-center">
+                                    <li class="w-16 h-16 bg-orange-400 relative shadow-inner"><span class="absolute inset-0 -top-6">17%</span></li>
+                                    <li class="w-16 h-10 bg-orange-400 relative shadow-2xl"><span class="absolute inset-0 -top-6">13%</span></li>
+                                    <li class="w-16 h-16 bg-orange-400 relative shadow-2xl"><span class="absolute inset-0 -top-6">29%</span></li>
+                                    <li class="w-16 h-20 bg-orange-400 relative shadow-2xl"><span class="absolute inset-0 -top-7">42%</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <strong class="text-base text-teal-600">Support</strong>
+                            <div class="bars mt-10">
+                                <ul class="flex gap-8 align-content-center items-end text-center">
+                                    <li class="w-16 h-16 bg-sky-700 relative shadow-inner"><span class="absolute inset-0 -top-6">17%</span></li>
+                                    <li class="w-16 h-10 bg-sky-700 relative shadow-2xl"><span class="absolute inset-0 -top-6">13%</span></li>
+                                    <li class="w-16 h-20 bg-sky-700 relative shadow-2xl"><span class="absolute inset-0 -top-6">22%</span></li>
+                                    <li class="w-16 h-24 bg-sky-700 relative shadow-2xl"><span class="absolute inset-0 -top-7">48%</span></li>
+                                </ul>
+                            </div>
+                        </div> 
+                        <div class="mt-4">
+                            <div class="bars mt-2">
+                                <ul class="flex gap-8 align-content-center items-start text-center">
+                                    <li class="w-16 h-1 bg-red-700 relative"><span class="absolute inset-0 top-2 text-sm">Beginners</span></li>
+                                    <li class="w-16 h-1 bg-red-700 relative"><span class="absolute inset-0 top-2 text-sm">Competent</span></li>
+                                    <li class="w-16 h-1 bg-red-700 relative"><span class="absolute inset-0 top-2 text-sm">Proficient</span></li>
+                                    <li class="w-16 h-1 bg-red-700 relative"><span class="absolute inset-0 top-2 text-sm">Experts</span></li>
+                                </ul>
+                            </div>
+                        </div>   
+                    </div>
+                    <!-- Right container End -->
+                    
+                </div>
+            </div>
+        </div>
+    <!-- Products and Platforms  -->
+    <div class="bg-white py-16">
+        <div class="w-4/5 mx-auto">
+            <div class="descHeaderSec text-center w-scree">
+                Products and Platforms 
+                <div class="secHrCont w-48 mx-auto">
+                    <hr class="secHr" />
+                </div>
+            </div>
+            <div class="w-4/5 mx-auto">
+                <div class="w-4/5 mx-auto">
+                    <p class="my-3 text-center">
+                        Our expertise in leading platform  solutions & key partnerships has helped achieve best in class Services to our Customers
+                    </p>
+                </div>
+                <section class="trigger section gutter-horizontal bg-gray gutter-vertical--m gutter-horizontal">
+                 <div class="header_main_body_photos slider mt-4">
+                   <div class="header_main_body_photos_include slide-in-right slide">
+                       <img alt="Logo Generix Group Blanc" src="./dashboard/uploads/testimony/1784power-bi_logo.webp" decoding="async" data-nimg="1" loading="lazy" style="color: transparent" />
+                   </div>
+                   <div class="header_main_body_photos_include slide-in-right slide">
+                       <img alt="Logo Generix Group Blanc" src="./dashboard/uploads/testimony/9444PTC_Windchill.png" decoding="async" data-nimg="1" loading="lazy" style="color: transparent" />
+                   </div>
+                   <div class="header_main_body_photos_include slide-in-right slide">
+                       <img alt="Logo Generix Group Blanc" src="./dashboard/uploads/testimony/6525Liferay-logo-full-color-2x.png" decoding="async" data-nimg="1" loading="lazy" style="color: transparent" />
+                   </div>
+                   <div class="header_main_body_photos_include slide-in-right slide">
+                       <img alt="Logo Generix Group Blanc" src="./dashboard/uploads/testimony/7367Oracle_logo.svg.png" decoding="async" data-nimg="1" loading="lazy" style="color: transparent" />
+                   </div>
+                   <div class="header_main_body_photos_include slide-in-right slide">
+                       <img alt="Logo Generix Group Blanc" src="./dashboard/uploads/testimony/8435Qlik_Logo.svg.png" decoding="async" data-nimg="1" loading="lazy" style="color: transparent" />
+                   </div>
+                   <div class="header_main_body_photos_include slide-in-right slide">
+                   <img alt="Logo Generix Group Blanc" src="./dashboard/uploads/testimony/magento.png" decoding="async" data-nimg="1" loading="lazy" style="color: transparent" />
+               </div>
+                 </div>
+               </section>
+               <script>
+                 $(document).ready(function() {
+                     $(".header_main_body_photos").slick({
+                     slidesToShow: 4,
+                     slidesToScroll: 1,
+                     autoplay: true,
+                     autoplaySpeed: 1500,
+                     arrows: false,
+                     dots: false,
+                     pauseOnHover: false,
+                     prevArrow: false,
+                     nextArrow: false,
+                     responsive: [{
+                         breakpoint: 768,
+                         settings: {
+                         slidesToShow: 3
+                         }
+                     }, {
+                         breakpoint: 520,
+                         settings: {
+                         slidesToShow: 2
+                         }
+                     }]
+                     });
+                 });
+                 </script>                    
+            </div>
+        </div>    
+    </div>
+      <!-- --------------Footer --------------------->
+      <footer class="footer_Priyansh">
+        <div class="container">
+          <div class="row">
+            <div class="footer_Priyansh-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="people.html"></a></li>
+                <li><a href="contact_us.html"></a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">privacy policy</a></li>
+              </ul>
+            </div>
+            <div class="footer_Priyansh-col">
+              <h4>Services</h4>
+              <ul>
+                <li><a href="erp.html">ERB </a></li>
+                <li><a href="edi.html">EDI </a></li>
+                <li><a href="cs.html">Customer Successes</a></li>
+                <li><a href="bia.html">BI&A</a>
+              </ul>
+            </div>
+            <div class="footer_Priyansh-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cx.html">Customer Experience</a></li>
+                <li><a href="our_services_protfolio.html">Our Services Protfolio</a></li>
+                <li><a href="our-qad-edi-team.html">Our QAD & EDI Team</a></li>
+                <li><a href="to:mail"><i class="fa-regular fa-envelope px-1"></i>info.digitusbiz.com</a></li>
+              </ul>
+            </div>
+            <div class="footer_Priyansh-col">
+              <h4>Address</h4>
+              <ul>
+                <li><a href="#">Digitus Business Solutions Pvt., Ltd</a></li>
+                <li><a href="#">242/A, 13th Cross, CMH Road,</a></li>
+                <li><a href="#">Urban Vault, 3rd Floor,</a></li>
+                <li><a href="#">Indiranagar, Bengaluru 560038.</a></li>
+                <li><a href="#"><i class="fa-solid fa-phone px-1"></i> +91 98861 39243</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="Footer_hr">
+        <div class="style-0">
+          <div class="style-1">
+            <a href="#" class="style-2"><img src="./assets/digituslogo/footerlogo.png" alt="" class="style-3" /></a>
+          </div>
+          <div class="style-4">Copyright © 2024 Digitus software private limited. All Rights Reserved.
+          </div>
+          <div class="style-5">
+            <!-- php work -->
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </footer>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <!-- this script use for animation part -->
+  
+     <script>
+     AOS.init();
+     </script>
+  
+     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+     <script src="./assets/script/index.js"></script>
+     <!-- for customer carousel -->
+     <script src="./assets/script/faq.js"></script>
+     <!-- for home /assetsFaq Part -->
+     <script src="./assets/script/scecondHomeSec.js"></script>
+     <!-- for home /assetsPart -->
+     <script src="./assets/script/handlescroll.js"></script>
+     <!-- for Navba/assetsr Part -->
+     <script>
+     
+        jQuery(document).ready(function($) {        
+           jQuery(".navmenu li .addOption ").hover(function() {
+              jQuery(this).find(".submenu").css({display:"block", transition: "top 2s"});
+           },
+           function () {
+              jQuery(this).find(".submenu").css({display:"none", transition: "all 7s"});
+           });
+  
+  
+  
+              //Stick add css
+              $(window).scroll(function() {    // this will work when your window scrolled.
+  
+              var height = $(window).scrollTop();  //getting the scrolling height of window
+              if(height  > 90) {
+                 $(".firstSectionContainer").addClass("stick_scroll");
+              } else{
+                 $(".firstSectionContainer").removeClass("stick_scroll");
+              }
+              });
+  
+     
+  
+        });
+        </script>
+  
+     <script>
+     (function() {
+     "use strict";
+  
+     var carousels = function() {
+        $(".owl-carousel1").owlCarousel({
+           loop: true,
+           center: true,
+           margin: 0,
+           responsiveClass: true,
+           nav: false,
+           responsive: {
+           0: {
+              items: 1,
+              nav: false
+           },
+           680: {
+              items: 2,
+              nav: false,
+              loop: false
+           },
+           1000: {
+              items: 3,
+              nav: true
+           }
+           }
+        });
+     };
+  
+     (function($) {
+        carousels();
+     })(jQuery);
+     })();
+     </script>
+     <!-- --------------Footer part----------------->  
+     </body>
+  </html>

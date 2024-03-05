@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!----Head Section----->
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>About Us - Digitus</title>
+      <link rel="stylesheet" href="./assets/css/footer.css"  />
+      <link rel="stylesheet" href="./assets/css/footer_2.css" />
+      <link rel="stylesheet" href="./assets/css/secondsection.css" />
+      <link rel="stylesheet" href="./assets/css/lib/boxicons.min.css" />
+      <!-- Animation -->
+      <link rel="stylesheet" href="./assets/css/lib/aos.css" rel="stylesheet" />
+      <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href="./assets/img/digitus_favicon.jpeg">
+      <!-- Owlcarousel2 -->
+      <link rel="stylesheet" href="./assets/css/lib/owl.carousel.min.css">
+      <link rel="stylesheet" href="./assets/css/lib/owl.theme.default.min.css">
+      <!-- fontawesome -->
+      <link rel="stylesheet" href="./assets/css/lib/all.min.css" integrity="sha512-... ">
+      <!-- JQuery -->
+      <script src="./assets/script/lib/jquery-2.2.0.min.js" type="text/javascript"></script>
+      <!-- Owlcarsoul JS -->
+      <script src="./assets/script/lib/slick.js"></script>
+      <script src="./assets/script/lib/owl.carousel.min.js"></script>
+      <script src="./assets/script/lib/dotlottie-player.mjs" type="module"></script>
+      <script src="./assets/script/lib/kit_fontawe.js" crossorigin="anonymous"></script>
+      <!-- tailwind css -->
+      <script src="./assets/script/lib/tailwindcss.cdn.js"></script>
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="./assets/css/digitus_style.css" />
+   </head>
+   <!----Head Section End------->
+   <body id="body" class="bg-red-200" onscroll="handleScroll()" onresize="handleResize()">
+      <!-- -------------Header and Banner------------------------------ -->
+      <div class="firstSec header-main">
+        <!-- ------------------  Header MainMenu and Logo Start---------------------->
+        <div class="firstSectionContainer" id="firstSectionContainer">
+           <h1 class="DigitusLogo">
+               <a href="index.html"><img src="./assets/digituslogo/mainlogo.png" class="logoImage" alt="Digitus" /></a>
+           </h1>
+           <div class="bx bx-menu" id="menu-icon"></div>
+           <ul class="navmenu">
+               <li>
+                   <div class="addOption">
+                         <a class="factLikContainer" href="services.html"><span class="navBarOpt">Services</span></a>
+                       <div id="dropdown1" class="hover-target submenu absolute group-hover:transition duration-300 shadow-xl">
+                           <div class="dropdownvisible">
+                               <div class="dropdiv">
+                                   <div class="dropdownheading">
+                                       <span>Diverse digital solutions for businesses: software, IT, marketing, and more.</span>
+                                   </div>
+                                   <div class="dropdownlist">
+                                       <a style="text-decoration: none" href="erp.html">
+                                         <div class="yellowColorFontThird">ERP</div>
+                                       </a>
+                                       <a style="text-decoration: none" href="edi.html">
+                                         <div class="yellowColorFontThird">EDI</div>
+                                       </a>
+                                       <a style="text-decoration: none" href="cx.html">
+                                         <div class="yellowColorFontThird">CX</div>
+                                       </a>
+                                       <a style="text-decoration: none" href="bia.html">
+                                         <div class="yellowColorFontThird">BI & A</div>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </li>
+               <li>
+                   <div class="addOption" id="firstDropdownButton" onmouseover="showDropdown2()">
+                       <span onmouseleave="hideDropdown2()" class="navBarOpt">Expertise</span>
+                       <div onmouseleave="hideDropdown2()" id="dropdown2" class="hover-target submenu absolute group-hover:transition duration-300 shadow-xl">
+                       <div class="dropdownvisible">
+                           <div class="dropdiv">
+                               <div class="dropdownheading">
+                                   <span>Diverse digital solutions for businesses: software, IT, marketing, and more.</span>
+                               </div>
+                               <div class="dropdownlist">
+                                   <a style="text-decoration: none" href="#">
+                                   <div class="yellowColorFontThird">Technology</div>
+                                   </a>
+                                   <a style="text-decoration: none" href="#">
+                                   <div class="yellowColorFontThird">Partnership</div>
+                                   </a>
+                               </div>
+                           </div>
+                       </div>
+                       </div>
+                   </div>
+               </li>
+               <li>
+                   <div class="addOption">
+                   <a class="factLikContainer" href="#"><span class="navBarOpt">Accelerators</span></a>
+               </div>
+               </li>
+               <li>
+                   <div class="addOption">
+                       <a class="factLikContainer" href="people.html"><span class="navBarOpt">People</span></a>
+                   </div>
+               </li>
+               <li>
+                   <div class="addOption">
+                       <a class="factLikContainer" href="about_us.html"><span class="navBarOpt">About Us</span></a>
+                   </div>
+               </li>
+               <li>
+                   <div class="addOption">
+                       <a class="factLikContainer" href="contact_us.html"><span class="navBarOpt">Contact Us</span></a>
+                   </div>
+               </li>
+           </ul>
+       </div>
+       <!-- ---------------------------------------------------------Hidden Navbar for mobile device-------------------------------------------------------------- -->
+       <div class="hidden_Navbar">
+         <div data-aos="zoom-in-up" data-aos-duration="900" class="hidden_Navbar_firstSectionContainer" id="hidden_Navbar_firstSectionContainer">
+           <div id="hidden_Navbar_menu-icon">
+             <div class="bx bx-menu bx-x"></div>
+           </div>
+   
+           <h1 class="hidden_Navbar_DigitusLogo">
+             <a href="index.html"><img src="./assets/images/mainlogo.png" class="hiddenlogoImage" alt="Digitus"/></a>
+           </h1>
+   
+           <div class="hidden_navmenu">
+             <ul class="hidden_navmenu-ul">
+               <li>
+                 <button id="button_expertise" class="hidden_Navbar_button">
+                   <a href="services.html">Services</a>
+                   <i class="fa fa-caret-down hidden_Navbar_drop_icon" aria-hidden="true"></i>
+                 </button>
+                 <div id="dropdown_expertise" class="dropdown_division">
+                   <ul class="dropdown_unorderedlist">
+   
+                     <a style="text-decoration: none; color: orange" href="erp.html">
+                       <li class="yellowColorFontThird">ERP</li>
+                     </a>
+                     <a style="text-decoration: none; color: orange" href="edi.html">
+                       <li class="yellowColorFontThird">EDI</li>
+                     </a>
+                     <a style="text-decoration: none; color: orange" href="cx.html">
+                       <li class="yellowColorFontThird">CX</li>
+                     </a>
+                     <a style="text-decoration: none; color: orange" href="bia.html">
+                       <li class="yellowColorFontThird">BI & A</li>
+                     </a>
+                   </ul>
+                 </div>
+               </li>
+   
+               <li>
+                 <button id="button_solution" class="hidden_Navbar_button">
+                   <a href="#">Expertise</a>
+                   <i class="fa fa-caret-down hidden_Navbar_drop_icon" aria-hidden="true"></i>
+                 </button>
+                 <div id="dropdown_solution" class="dropdown_division">
+                   <ul class="dropdown_unorderedlist">
+   
+                     <a style="text-decoration: none; color: orange" href="#">
+                       <li class="yellowColorFontThird">Technology</li>
+                     </a>
+                     <a style="text-decoration: none; color: orange" href="#">
+                       <li class="yellowColorFontThird">Partnership</li>
+                     </a>
+   
+                   </ul>
+                 </div>
+               </li>
+   
+               <li>
+                 <button class="hidden_Navbar_button" disabled>
+                   <a href="#"> Accelators</a>
+                 </button>
+               </li>
+   
+               <li>
+                 <button class="hidden_Navbar_button" disabled>
+                   <a href="people.html"> People</a>
+                 </button>
+               </li>
+               <li>
+                 <button class="hidden_Navbar_button" disabled>
+                   <a href="about_us.html"> About Us</a>
+                 </button>
+               </li>
+               <li>
+                 <button class="hidden_Navbar_button" disabled>
+                   <a href="contact_us.html"> Contact Us</a>
+                 </button>
+               </li>
+             </ul>
+           </div>
+         </div>
+       </div>
+       <!-- ----------------hidden Navbar End Here---------------- -->
+     </div>
+     <!-- ---------------  Header MainMenu and Logo End-------------------->
+      
+      <!---------- Intro Section--------------------------- -->
+      <div class="secondSection intro-sec">
+         <div class="secondHeader" data-aos="zoom-in-up" data-aos-duration="900">
+            About <span class="text-orange-400 px-2"> Us</span>
+         </div>
+         <div class="secondBodyContainer" data-aos="fade-up" data-aos-duration="900">
+            <div class="secCircleCont">
+               <img id="circleImg" src="./assets/img/about.jpg" alt="About Us Intro" />
+            </div>
+            <div class="secondSecDescriptionContainer" data-aos="fade-up" data-aos-duration="900">
+               <div class="descHeaderSec">
+                  Introduction
+               </div>
+               <div class="secHrCont">
+                  <hr class="secHr" />
+               </div>
+               <div class="secDescSec">
+                  <div class="secondCircleDesc activeCircle" id="secDesc1">
+                     <div class="secDescText">
+                        <p>Founded by industry veterans with a wealth of global exposure, our company brings a refreshing approach to IT industry. <br><br> 
+                           Despite being an young startup, we proudly possess a staggering 600 man-years of combined expertise, 
+                           a testament to our team's depth of knowledge.<br><br>
+                        <p> What sets us apart is the fusion of technology and domain-specific insights,
+                           empowering us to deliver a comprehensive range of services across the spectrum – from  consulting to seamless managed services. 
+                           Our reach knows no bounds, as we currently cater to a diverse clientele scattered across geographies.<br><br>
+                           We take immense pride in serving as a strategic IT partner to major global companies, 
+                           shaping the technological landscape of tomorrow.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!---------- Our guiding principles Section--------------------------- -->
+      <div class="secondSection Guiding bg-white">
+         <div class="secondHeader">
+            Our Guiding <span class="text-orange-400 pl-2">Principles</span>
+         </div>
+            <div class="bg-white">
+               <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8">
+                  <div class="grid sm:grid-cols-3 gap-16 sm:gap-8 mt-16 sm:mt-24">
+                     <div class="text-center">
+                        <!-- <h3 class="font-headline text-xl sm:text-2xl mt-6 sm:mt-10" data-aos="fade-up" data-aos-duration="900">ERP</h3> -->
+                        <div class="mt-4 text-left service-content-list hover:bg-white hover:text-black  transition duration-150 ease-in-out bg-black h-88" data-aos="fade-up" data-aos-duration="900">
+                        <div class="absolute inset-0 w-20 h-20 sm:w-28 sm:h-28 lg:w-32 lg:h-32 mx-auto left-2 roundshape-pos">
+                           <div
+                              class="z-10 relative w-full h-full bg-white rounded-full border border-gray-300 shadow flex items-center justify-center text-black">
+                              <img alt="Vision" class="w-20" src="./assets/img/vision_icon.png" data-aos="fade-up" data-aos-duration="900"/>
+                           </div>
+                           <div class="absolute inset-0 -translate-x-2 -translate-y-2 bg-orange-400 rounded-full"></div>
+                        </div>
+                           <div class="focus-content my-2">
+                              <div class="mt-16">
+                                 <div class="text-center "><strong class="text-2xl text-center">Vision</strong></div>
+                                 <div class="secDescText">
+                                    <p>To be the leading digital services organization that generates value for our customers by enhancing the work life balance of their digital community/users through automation, simplification and humanization of their experience with innovative IT applications.</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="text-center">
+                        <!-- <h3 class="font-headline text-xl sm:text-2xl mt-6 sm:mt-10" data-aos="fade-up" data-aos-duration="900">ERP</h3> -->
+                        <div class="mt-4 text-left service-content-list hover:bg-white hover:text-black transition duration-150 ease-in-out bg-black h-88" data-aos="fade-up" data-aos-duration="900">
+                        <div class="absolute inset-0 w-20 h-20 sm:w-28 sm:h-28 lg:w-32 lg:h-32 mx-auto left-2 roundshape-pos">
+                           <div
+                              class="z-10 relative w-full h-full bg-white rounded-full border border-gray-300 shadow flex items-center justify-center text-black">
+                              <img alt="ethos" class="w-20" src="./assets/img/solution_icon.png" data-aos="fade-up" data-aos-duration="900"/>
+                           </div>
+                           <div class="absolute inset-0 -translate-x-2 -translate-y-2 bg-orange-400 rounded-full"></div>
+                        </div>
+                           <div class="focus-content my-2">
+                              <div class="mt-16">
+                                 <div class="text-center "><strong class="text-2xl text-center">Ethos</strong></div>
+                                 <div class="secDescText">
+                                    <p>We are an Employee driven Customer centric organization focussed on value generation for customers. Fuelled with Passion, Agility and zeal for Innovation, we deliver exceptional performance though collective contribution. </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="text-center">
+                        <!-- <h3 class="font-headline text-xl sm:text-2xl mt-6 sm:mt-10" data-aos="fade-up" data-aos-duration="900">ERP</h3> -->
+                        <div class="mt-4 text-left service-content-list hover:bg-white hover:text-black transition duration-700 ease-in-out bg-black h-88" data-aos="fade-up" data-aos-duration="900">
+                        <div class="absolute inset-0 w-20 h-20 sm:w-28 sm:h-28 lg:w-32 lg:h-32 mx-auto left-2 roundshape-pos">
+                           <div
+                              class="z-10 relative w-full h-full bg-white rounded-full border border-gray-300 shadow flex items-center justify-center text-black">
+                              <img alt="Purpose" class="w-20" src="./assets/img/focus_icon.png" data-aos="fade-up" data-aos-duration="900"/>
+                           </div>
+                           <div class="absolute inset-0 -translate-x-2 -translate-y-2 bg-orange-400 rounded-full"></div>
+                        </div>
+                           <div class="focus-content my-2">
+                              <div class="mt-16">
+                                 <div class="text-center "><strong class="text-2xl text-center">Purpose</strong></div>
+                                 <div class="secDescText">
+                                    <p>
+                                       We are committed to simplifying and enriching the experience for our customers by leveraging intuitive technology, empowering those who aspire to overcome barriers.
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+      </div>
+      <!---------- Value Proposition Section--------------------------- -->
+      <div class="secondSection value_propostion-sec pt-0 h-100 pt-12 pb-24">
+         <div class="secondHeader py-6" data-aos="zoom-in-up" data-aos-duration="900">
+            Value <span class="text-orange-400 pl-2 ">Proposition</span>
+         </div>
+         <div class="" data-aos="fade-up" data-aos-duration="900">
+            <div class="secCircleCont w-3/5  mx-auto relative text-white">
+                     <div class="bg-black absolute inset-0 -z-40 opacity-55">
+                        <img  style="height: 332px;" class="absolute inset-0 -z-50 w-full h-max" src="./assets/img/about_us_banner.jpg" alt="value Proposition" />
+                     </div>
+               <div class="secondSecDescriptionContainer">
+                     <div class="descHeaderSec w-96">
+                        Our Strength and Your Benefits!
+                     </div>
+                     <div class="secHrCont w-96">
+                        <hr class="secHr" />
+                     </div>
+               </div>
+
+               <div class="">
+                  <div class=" activeCircle" id="secDesc1">
+                     <div class="secDescText">
+                        <ul class="py-4">
+                           <li class="py-2"><i class="fa-solid fa-angle-right text-white pr-4"></i>Accountability for Results  </li>
+                           <li class="py-2"><i class="fa-solid fa-angle-right text-white pr-4"></i>Strong Business Process Knowledge </li>
+                           <li class="py-2"><i class="fa-solid fa-angle-right text-white pr-4"></i>Investment in Solving Customer Challenges </li>
+                           <li class="py-2"><i class="fa-solid fa-angle-right text-white pr-4"></i>Ease of business engagement  </li>
+                           <li class="py-2"><i class="fa-solid fa-angle-right text-white pr-4"></i>Result oriented Collaborative partnerships  </li>
+                           <li class="py-2"><i class="fa-solid fa-angle-right text-white pr-4"></i>Deep expertise in strategic  technologies </li>
+                           <li class="py-2"><i class="fa-solid fa-angle-right text-white pr-4"></i>Innovative accelerators for expedited success </li>
+                        </ul>
+                        <div class="bg-black absolute inset-0 -z-40 opacity-65"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Products and Platforms  -->
+      <div class="bg-white py-16">
+            <div class="w-4/5 mx-auto">
+                <div class="descHeaderSec text-center w-scree">
+                    Products and Platforms 
+                    <div class="secHrCont w-48 mx-auto">
+                        <hr class="secHr" />
+                    </div>
+                </div>
+                <div class="w-4/5 mx-auto">
+                    <div class="w-4/5 mx-auto">
+                        <p class="my-3 text-center">
+                            Our expertise in leading platform  solutions & key partnerships has helped achieve best in class Services to our Customers
+                        </p>
+                    </div>
+                    <section class="trigger section gutter-horizontal bg-gray gutter-vertical--m gutter-horizontal">
+                     <div class="header_main_body_photos slider mt-4">
+                       <div class="header_main_body_photos_include slide-in-right slide">
+                           <img alt="Logo Generix Group Blanc" src="./dashboard/uploads/testimony/1784power-bi_logo.webp" decoding="async" data-nimg="1" loading="lazy" style="color: transparent" />
+                       </div>
+                       <div class="header_main_body_photos_include slide-in-right slide">
+                           <img alt="Logo Generix Group Blanc" src="./dashboard/uploads/testimony/9444PTC_Windchill.png" decoding="async" data-nimg="1" loading="lazy" style="color: transparent" />
+                       </div>
+                       <div class="header_main_body_photos_include slide-in-right slide">
+                           <img alt="Logo Generix Group Blanc" src="./dashboard/uploads/testimony/6525Liferay-logo-full-color-2x.png" decoding="async" data-nimg="1" loading="lazy" style="color: transparent" />
+                       </div>
+                       <div class="header_main_body_photos_include slide-in-right slide">
+                           <img alt="Logo Generix Group Blanc" src="./dashboard/uploads/testimony/7367Oracle_logo.svg.png" decoding="async" data-nimg="1" loading="lazy" style="color: transparent" />
+                       </div>
+                       <div class="header_main_body_photos_include slide-in-right slide">
+                           <img alt="Logo Generix Group Blanc" src="./dashboard/uploads/testimony/8435Qlik_Logo.svg.png" decoding="async" data-nimg="1" loading="lazy" style="color: transparent" />
+                       </div>
+                       <div class="header_main_body_photos_include slide-in-right slide">
+                       <img alt="Logo Generix Group Blanc" src="./dashboard/uploads/testimony/magento.png" decoding="async" data-nimg="1" loading="lazy" style="color: transparent" />
+                   </div>
+                     </div>
+                   </section>
+                   <script>
+                     $(document).ready(function() {
+                         $(".header_main_body_photos").slick({
+                         slidesToShow: 4,
+                         slidesToScroll: 1,
+                         autoplay: true,
+                         autoplaySpeed: 1500,
+                         arrows: false,
+                         dots: false,
+                         pauseOnHover: false,
+                         prevArrow: false,
+                         nextArrow: false,
+                         responsive: [{
+                             breakpoint: 768,
+                             settings: {
+                             slidesToShow: 3
+                             }
+                         }, {
+                             breakpoint: 520,
+                             settings: {
+                             slidesToShow: 2
+                             }
+                         }]
+                         });
+                     });
+                     </script>                    
+                </div>
+            </div>    
+        </div>
+      <!-- --------------Footer --------------------->
+      <footer class="footer_Priyansh">
+        <div class="container">
+          <div class="row">
+            <div class="footer_Priyansh-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="people.html"></a></li>
+                <li><a href="contact_us.html"></a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">privacy policy</a></li>
+              </ul>
+            </div>
+            <div class="footer_Priyansh-col">
+              <h4>Services</h4>
+              <ul>
+                <li><a href="erp.html">ERB </a></li>
+                <li><a href="edi.html">EDI </a></li>
+                <li><a href="cs.html">Customer Successes</a></li>
+                <li><a href="bia.html">BI&A</a>
+              </ul>
+            </div>
+            <div class="footer_Priyansh-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cx.html">Customer Experience</a></li>
+                <li><a href="our_services_protfolio.html">Our Services Protfolio</a></li>
+                <li><a href="our-qad-edi-team.html">Our QAD & EDI Team</a></li>
+                <li><a href="to:mail"><i class="fa-regular fa-envelope px-1"></i>info.digitusbiz.com</a></li>
+              </ul>
+            </div>
+            <div class="footer_Priyansh-col">
+              <h4>Address</h4>
+              <ul>
+                <li><a href="#">Digitus Business Solutions Pvt., Ltd</a></li>
+                <li><a href="#">242/A, 13th Cross, CMH Road,</a></li>
+                <li><a href="#">Urban Vault, 3rd Floor,</a></li>
+                <li><a href="#">Indiranagar, Bengaluru 560038.</a></li>
+                <li><a href="#"><i class="fa-solid fa-phone px-1"></i> +91 98861 39243</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="Footer_hr">
+        <div class="style-0">
+          <div class="style-1">
+            <a href="#" class="style-2"><img src="./assets/digituslogo/footerlogo.png" alt="" class="style-3" /></a>
+          </div>
+          <div class="style-4">Copyright © 2024 Digitus software private limited. All Rights Reserved.
+          </div>
+          <div class="style-5">
+            <!-- php work -->
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </footer>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <!-- this script use for animation part -->
+  
+      <script>
+        AOS.init();
+      </script>
+  
+      <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+      <script src="./assets/script/index.js"></script>
+      <!-- for customer carousel -->
+      <script src="./assets/script/faq.js"></script>
+      <!-- for home /assetsFaq Part -->
+      <script src="./assets/script/scecondHomeSec.js"></script>
+      <!-- for home /assetsPart -->
+      <script src="./assets/script/handlescroll.js"></script>
+      <!-- for Navba/assetsr Part -->
+      <script>
+        
+         jQuery(document).ready(function($) {        
+             jQuery(".navmenu li .addOption ").hover(function() {
+               jQuery(this).find(".submenu").css({display:"block", transition: "top 2s"});
+             },
+             function () {
+               jQuery(this).find(".submenu").css({display:"none", transition: "all 7s"});
+             });
+     
+     
+     
+               //Stick add css
+               $(window).scroll(function() {    // this will work when your window scrolled.
+     
+                 var height = $(window).scrollTop();  //getting the scrolling height of window
+                 if(height  > 90) {
+                   $(".firstSectionContainer").addClass("stick_scroll");
+                 } else{
+                   $(".firstSectionContainer").removeClass("stick_scroll");
+                 }
+               });
+     
+       
+     
+         });
+         </script>
+  
+      <script>
+      (function() {
+        "use strict";
+  
+        var carousels = function() {
+          $(".owl-carousel1").owlCarousel({
+            loop: true,
+            center: true,
+            margin: 0,
+            responsiveClass: true,
+            nav: false,
+            responsive: {
+              0: {
+                items: 1,
+                nav: false
+              },
+              680: {
+                items: 2,
+                nav: false,
+                loop: false
+              },
+              1000: {
+                items: 3,
+                nav: true
+              }
+            }
+          });
+        };
+  
+        (function($) {
+          carousels();
+        })(jQuery);
+      })();
+    </script>
+      <!-- --------------Footer part----------------->  
+   </body>
+</html>

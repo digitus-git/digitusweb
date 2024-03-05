@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!----Head Section----->
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Our Team - Digitus</title>
+      <link rel="stylesheet" href="./assets/css/footer.css"  />
+      <link rel="stylesheet" href="./assets/css/footer_2.css" />
+      <link rel="stylesheet" href="./assets/css/secondsection.css" />
+      <link rel="stylesheet" href="./assets/css/lib/boxicons.min.css" />
+      <!-- Animation -->
+      <link rel="stylesheet" href="./assets/css/lib/aos.css" rel="stylesheet" />
+      <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href="./assets/img/digitus_favicon.jpeg">
+      <!-- Owlcarousel2 -->
+      <link rel="stylesheet" href="./assets/css/lib/owl.carousel.min.css">
+      <link rel="stylesheet" href="./assets/css/lib/owl.theme.default.min.css">
+      <!-- fontawesome -->
+      <link rel="stylesheet" href="./assets/css/lib/all.min.css" integrity="sha512-... ">
+      <!-- JQuery -->
+      <script src="./assets/script/lib/jquery-2.2.0.min.js" type="text/javascript"></script>
+      <!-- Owlcarsoul JS -->
+      <script src="./assets/script/lib/slick.js"></script>
+      <script src="./assets/script/lib/owl.carousel.min.js"></script>
+      <script src="./assets/script/lib/dotlottie-player.mjs" type="module"></script>
+      <script src="./assets/script/lib/kit_fontawe.js" crossorigin="anonymous"></script>
+      <!-- tailwind css -->
+      <script src="./assets/script/lib/tailwindcss.cdn.js"></script>
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="./assets/css/digitus_style.css" />
+   </head>
+   <!----Head Section End------->
+   <body id="body" class="bg-red-200" onscroll="handleScroll()" onresize="handleResize()">
+      <!-- -------------Header and Banner------------------------------ -->
+      <div class="firstSec header-main">
+        <!-- ------------------  Header MainMenu and Logo Start---------------------->
+        <div class="firstSectionContainer" id="firstSectionContainer">
+           <h1 class="DigitusLogo">
+               <a href="index.html"><img src="./assets/digituslogo/mainlogo.png" class="logoImage" alt="Digitus" /></a>
+           </h1>
+           <div class="bx bx-menu" id="menu-icon"></div>
+           <ul class="navmenu">
+               <li>
+                   <div class="addOption">
+                         <a class="factLikContainer" href="services.html"><span class="navBarOpt">Services</span></a>
+                       <div id="dropdown1" class="hover-target submenu absolute group-hover:transition duration-300 shadow-xl">
+                           <div class="dropdownvisible">
+                               <div class="dropdiv">
+                                   <div class="dropdownheading">
+                                       <span>Diverse digital solutions for businesses: software, IT, marketing, and more.</span>
+                                   </div>
+                                   <div class="dropdownlist">
+                                       <a style="text-decoration: none" href="erp.html">
+                                         <div class="yellowColorFontThird">ERP</div>
+                                       </a>
+                                       <a style="text-decoration: none" href="edi.html">
+                                         <div class="yellowColorFontThird">EDI</div>
+                                       </a>
+                                       <a style="text-decoration: none" href="cx.html">
+                                         <div class="yellowColorFontThird">CX</div>
+                                       </a>
+                                       <a style="text-decoration: none" href="bia.html">
+                                         <div class="yellowColorFontThird">BI & A</div>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </li>
+               <li>
+                   <div class="addOption" id="firstDropdownButton" onmouseover="showDropdown2()">
+                       <span onmouseleave="hideDropdown2()" class="navBarOpt">Expertise</span>
+                       <div onmouseleave="hideDropdown2()" id="dropdown2" class="hover-target submenu absolute group-hover:transition duration-300 shadow-xl">
+                       <div class="dropdownvisible">
+                           <div class="dropdiv">
+                               <div class="dropdownheading">
+                                   <span>Diverse digital solutions for businesses: software, IT, marketing, and more.</span>
+                               </div>
+                               <div class="dropdownlist">
+                                   <a style="text-decoration: none" href="#">
+                                   <div class="yellowColorFontThird">Technology</div>
+                                   </a>
+                                   <a style="text-decoration: none" href="#">
+                                   <div class="yellowColorFontThird">Partnership</div>
+                                   </a>
+                               </div>
+                           </div>
+                       </div>
+                       </div>
+                   </div>
+               </li>
+               <li>
+                   <div class="addOption">
+                   <a class="factLikContainer" href="#"><span class="navBarOpt">Accelerators</span></a>
+               </div>
+               </li>
+               <li>
+                   <div class="addOption">
+                       <a class="factLikContainer" href="people.html"><span class="navBarOpt">People</span></a>
+                   </div>
+               </li>
+               <li>
+                   <div class="addOption">
+                       <a class="factLikContainer" href="about_us.html"><span class="navBarOpt">About Us</span></a>
+                   </div>
+               </li>
+               <li>
+                   <div class="addOption">
+                       <a class="factLikContainer" href="contact_us.html"><span class="navBarOpt">Contact Us</span></a>
+                   </div>
+               </li>
+           </ul>
+       </div>
+       <!-- ---------------------------------------------------------Hidden Navbar for mobile device-------------------------------------------------------------- -->
+       <div class="hidden_Navbar">
+         <div data-aos="zoom-in-up" data-aos-duration="900" class="hidden_Navbar_firstSectionContainer" id="hidden_Navbar_firstSectionContainer">
+           <div id="hidden_Navbar_menu-icon">
+             <div class="bx bx-menu bx-x"></div>
+           </div>
+   
+           <h1 class="hidden_Navbar_DigitusLogo">
+             <a href="index.html"><img src="./assets/images/mainlogo.png" class="hiddenlogoImage" alt="Digitus"/></a>
+           </h1>
+   
+           <div class="hidden_navmenu">
+             <ul class="hidden_navmenu-ul">
+               <li>
+                 <button id="button_expertise" class="hidden_Navbar_button">
+                   <a href="services.html">Services</a>
+                   <i class="fa fa-caret-down hidden_Navbar_drop_icon" aria-hidden="true"></i>
+                 </button>
+                 <div id="dropdown_expertise" class="dropdown_division">
+                   <ul class="dropdown_unorderedlist">
+   
+                     <a style="text-decoration: none; color: orange" href="erp.html">
+                       <li class="yellowColorFontThird">ERP</li>
+                     </a>
+                     <a style="text-decoration: none; color: orange" href="edi.html">
+                       <li class="yellowColorFontThird">EDI</li>
+                     </a>
+                     <a style="text-decoration: none; color: orange" href="cx.html">
+                       <li class="yellowColorFontThird">CX</li>
+                     </a>
+                     <a style="text-decoration: none; color: orange" href="bia.html">
+                       <li class="yellowColorFontThird">BI & A</li>
+                     </a>
+                   </ul>
+                 </div>
+               </li>
+   
+               <li>
+                 <button id="button_solution" class="hidden_Navbar_button">
+                   <a href="#">Expertise</a>
+                   <i class="fa fa-caret-down hidden_Navbar_drop_icon" aria-hidden="true"></i>
+                 </button>
+                 <div id="dropdown_solution" class="dropdown_division">
+                   <ul class="dropdown_unorderedlist">
+   
+                     <a style="text-decoration: none; color: orange" href="#">
+                       <li class="yellowColorFontThird">Technology</li>
+                     </a>
+                     <a style="text-decoration: none; color: orange" href="#">
+                       <li class="yellowColorFontThird">Partnership</li>
+                     </a>
+   
+                   </ul>
+                 </div>
+               </li>
+   
+               <li>
+                 <button class="hidden_Navbar_button" disabled>
+                   <a href="#"> Accelators</a>
+                 </button>
+               </li>
+   
+               <li>
+                 <button class="hidden_Navbar_button" disabled>
+                   <a href="people.html"> People</a>
+                 </button>
+               </li>
+               <li>
+                 <button class="hidden_Navbar_button" disabled>
+                   <a href="about_us.html"> About Us</a>
+                 </button>
+               </li>
+               <li>
+                 <button class="hidden_Navbar_button" disabled>
+                   <a href="contact_us.html"> Contact Us</a>
+                 </button>
+               </li>
+             </ul>
+           </div>
+         </div>
+       </div>
+       <!-- ----------------hidden Navbar End Here---------------- -->
+     </div>
+     <!-- ---------------  Header MainMenu and Logo End-------------------->
+      <!-- ---------------- First Section Visible Navbar End Here-------------- -->
+      <!---------- Our Team --------------------------- -->
+      <div class="secondSection Guiding bg-white pt-0">
+         <div class="secondHeader py-4">
+             Meet Our <span class="text-orange-400 pl-2">Team</span>
+         </div>
+         <div class="text-[#333] bg-gray-50 p-4">
+            <div class="max-w-5xl max-sm:max-w-sm mx-auto">
+                <!-- <h2 class="text-4xl font-extrabold">Meet Our Team</h2> -->
+                <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8 text-center mt-12">
+                <div class="bg-white py-4 px-2 rounded-md hover:scale-110 transition-all duration-500">
+                    <img src="https://readymadeui.com/team-1.webp" class="w-36 h-36 rounded-full inline-block" />
+                    <div class="mt-4">
+                    <h4 class="text-base font-extrabold">John Doe</h4>
+                    <p class="text-xs mt-1">Software Engineer</p>
+                    <div class="space-x-4 mt-4">
+                        <button type="button"
+                        class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12px" fill="#333" viewBox="0 0 155.139 155.139">
+                            <path
+                            d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"
+                            data-original="#010002" />
+                        </svg>
+                        </button>
+                        <button type="button"
+                        class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12px" fill="#333" viewBox="0 0 512 512">
+                            <path
+                            d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"
+                            data-original="#03a9f4" />
+                        </svg>
+                        </button>
+                        <button type="button"
+                        class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#333" viewBox="0 0 24 24">
+                            <path
+                            d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
+                            data-original="#0077b5" />
+                        </svg>
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                <div class="bg-white py-4 px-2 rounded-md hover:scale-110 transition-all duration-500">
+                    <img src="https://readymadeui.com/team-2.webp" class="w-36 h-36 rounded-full inline-block" />
+                    <div class="mt-4">
+                    <h4 class="text-base font-extrabold">Mark Adair</h4>
+                    <p class="text-xs mt-1">Software Engineer</p>
+                    <div class="space-x-4 mt-4">
+                        <button type="button"
+                        class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12px" fill="#333" viewBox="0 0 155.139 155.139">
+                            <path
+                            d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"
+                            data-original="#010002" />
+                        </svg>
+                        </button>
+                        <button type="button"
+                        class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12px" fill="#333" viewBox="0 0 512 512">
+                            <path
+                            d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"
+                            data-original="#03a9f4" />
+                        </svg>
+                        </button>
+                        <button type="button"
+                        class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#333" viewBox="0 0 24 24">
+                            <path
+                            d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
+                            data-original="#0077b5" />
+                        </svg>
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                <div class="bg-white py-4 px-2 rounded-md hover:scale-110 transition-all duration-500">
+                    <img src="https://readymadeui.com/team-3.webp" class="w-36 h-36 rounded-full inline-block" />
+                    <div class="mt-4">
+                    <h4 class="text-base font-extrabold">Simon Konecki</h4>
+                    <p class="text-xs mt-1">Web Designer</p>
+                    <div class="space-x-4 mt-4">
+                        <button type="button"
+                        class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12px" fill="#333" viewBox="0 0 155.139 155.139">
+                            <path
+                            d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"
+                            data-original="#010002" />
+                        </svg>
+                        </button>
+                        <button type="button"
+                        class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12px" fill="#333" viewBox="0 0 512 512">
+                            <path
+                            d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"
+                            data-original="#03a9f4" />
+                        </svg>
+                        </button>
+                        <button type="button"
+                        class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#333" viewBox="0 0 24 24">
+                            <path
+                            d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
+                            data-original="#0077b5" />
+                        </svg>
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                <div class="bg-white py-4 px-2 rounded-md hover:scale-110 transition-all duration-500">
+                    <img src="https://readymadeui.com/team-4.webp" class="w-36 h-36 rounded-full inline-block" />
+                    <div class="mt-4">
+                    <h4 class="text-base font-extrabold">Sophia</h4>
+                    <p class="text-xs mt-1">Software Developer</p>
+                    <div class="space-x-4 mt-4">
+                        <button type="button"
+                        class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12px" fill="#333" viewBox="0 0 155.139 155.139">
+                            <path
+                            d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"
+                            data-original="#010002" />
+                        </svg>
+                        </button>
+                        <button type="button"
+                        class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12px" fill="#333" viewBox="0 0 512 512">
+                            <path
+                            d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"
+                            data-original="#03a9f4" />
+                        </svg>
+                        </button>
+                        <button type="button"
+                        class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#333" viewBox="0 0 24 24">
+                            <path
+                            d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
+                            data-original="#0077b5" />
+                        </svg>
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                <div class="bg-white py-4 px-2 rounded-md hover:scale-110 transition-all duration-500">
+                    <img src="https://readymadeui.com/team-5.webp" class="w-36 h-36 rounded-full inline-block" />
+                    <div class="mt-4">
+                    <h4 class="text-base font-extrabold">Alen</h4>
+                    <p class="text-xs mt-1">Software Developer</p>
+                    <div class="space-x-4 mt-4">
+                        <button type="button"
+                        class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12px" fill="#333" viewBox="0 0 155.139 155.139">
+                            <path
+                            d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"
+                            data-original="#010002" />
+                        </svg>
+                        </button>
+                        <button type="button"
+                        class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12px" fill="#333" viewBox="0 0 512 512">
+                            <path
+                            d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"
+                            data-original="#03a9f4" />
+                        </svg>
+                        </button>
+                        <button type="button"
+                        class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#333" viewBox="0 0 24 24">
+                            <path
+                            d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
+                            data-original="#0077b5" />
+                        </svg>
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                <div class="bg-white py-4 px-2 rounded-md hover:scale-110 transition-all duration-500">
+                    <img src="https://readymadeui.com/team-6.webp" class="w-36 h-36 rounded-full inline-block" />
+                    <div class="mt-4">
+                    <h4 class="text-base font-extrabold">Eleanor</h4>
+                    <p class="text-xs mt-1">Web Designer</p>
+                    <div class="space-x-4 mt-4">
+                        <button type="button"
+                        class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12px" fill="#333" viewBox="0 0 155.139 155.139">
+                            <path
+                            d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"
+                            data-original="#010002" />
+                        </svg>
+                        </button>
+                        <button type="button"
+                        class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12px" fill="#333" viewBox="0 0 512 512">
+                            <path
+                            d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"
+                            data-original="#03a9f4" />
+                        </svg>
+                        </button>
+                        <button type="button"
+                        class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#333" viewBox="0 0 24 24">
+                            <path
+                            d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
+                            data-original="#0077b5" />
+                        </svg>
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                <div class="bg-white py-4 px-2 rounded-md hover:scale-110 transition-all duration-500">
+                    <img src="https://readymadeui.com/team-1.webp" class="w-36 h-36 rounded-full inline-block" />
+                    <div class="mt-4">
+                    <h4 class="text-base font-extrabold">John Doe</h4>
+                    <p class="text-xs mt-1">Software Engineer</p>
+                    <div class="space-x-4 mt-4">
+                        <button type="button"
+                        class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12px" fill="#333" viewBox="0 0 155.139 155.139">
+                            <path
+                            d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"
+                            data-original="#010002" />
+                        </svg>
+                        </button>
+                        <button type="button"
+                        class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12px" fill="#333" viewBox="0 0 512 512">
+                            <path
+                            d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"
+                            data-original="#03a9f4" />
+                        </svg>
+                        </button>
+                        <button type="button"
+                        class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#333" viewBox="0 0 24 24">
+                            <path
+                            d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
+                            data-original="#0077b5" />
+                        </svg>
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                <div class="bg-white py-4 px-2 rounded-md hover:scale-110 transition-all duration-500">
+                    <img src="https://readymadeui.com/team-2.webp" class="w-36 h-36 rounded-full inline-block" />
+                    <div class="mt-4">
+                    <h4 class="text-base font-extrabold">Mark Adair</h4>
+                    <p class="text-xs mt-1">Software Engineer</p>
+                    <div class="space-x-4 mt-4">
+                        <button type="button"
+                        class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12px" fill="#333" viewBox="0 0 155.139 155.139">
+                            <path
+                            d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"
+                            data-original="#010002" />
+                        </svg>
+                        </button>
+                        <button type="button"
+                        class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12px" fill="#333" viewBox="0 0 512 512">
+                            <path
+                            d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"
+                            data-original="#03a9f4" />
+                        </svg>
+                        </button>
+                        <button type="button"
+                        class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#333" viewBox="0 0 24 24">
+                            <path
+                            d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
+                            data-original="#0077b5" />
+                        </svg>
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+      </div>
+
+    
+      <!-- Products and Platforms  -->
+      <div class="bg-white py-16">
+        <div class="w-4/5 mx-auto">
+            <div class="descHeaderSec text-center w-scree">
+                Products and Platforms 
+                <div class="secHrCont w-48 mx-auto">
+                    <hr class="secHr" />
+                </div>
+            </div>
+            <div class="w-4/5 mx-auto">
+                <div class="w-4/5 mx-auto">
+                    <p class="my-3 text-center">
+                        Our expertise in leading platform  solutions & key partnerships has helped achieve best in class Services to our Customers
+                    </p>
+                </div>
+                <section class="trigger section gutter-horizontal bg-gray gutter-vertical--m gutter-horizontal">
+                 <div class="header_main_body_photos slider mt-4">
+                   <div class="header_main_body_photos_include slide-in-right slide">
+                       <img alt="Logo Generix Group Blanc" src="./dashboard/uploads/testimony/1784power-bi_logo.webp" decoding="async" data-nimg="1" loading="lazy" style="color: transparent" />
+                   </div>
+                   <div class="header_main_body_photos_include slide-in-right slide">
+                       <img alt="Logo Generix Group Blanc" src="./dashboard/uploads/testimony/9444PTC_Windchill.png" decoding="async" data-nimg="1" loading="lazy" style="color: transparent" />
+                   </div>
+                   <div class="header_main_body_photos_include slide-in-right slide">
+                       <img alt="Logo Generix Group Blanc" src="./dashboard/uploads/testimony/6525Liferay-logo-full-color-2x.png" decoding="async" data-nimg="1" loading="lazy" style="color: transparent" />
+                   </div>
+                   <div class="header_main_body_photos_include slide-in-right slide">
+                       <img alt="Logo Generix Group Blanc" src="./dashboard/uploads/testimony/7367Oracle_logo.svg.png" decoding="async" data-nimg="1" loading="lazy" style="color: transparent" />
+                   </div>
+                   <div class="header_main_body_photos_include slide-in-right slide">
+                       <img alt="Logo Generix Group Blanc" src="./dashboard/uploads/testimony/8435Qlik_Logo.svg.png" decoding="async" data-nimg="1" loading="lazy" style="color: transparent" />
+                   </div>
+                   <div class="header_main_body_photos_include slide-in-right slide">
+                   <img alt="Logo Generix Group Blanc" src="./dashboard/uploads/testimony/magento.png" decoding="async" data-nimg="1" loading="lazy" style="color: transparent" />
+               </div>
+                 </div>
+               </section>
+               <script>
+                 $(document).ready(function() {
+                     $(".header_main_body_photos").slick({
+                     slidesToShow: 4,
+                     slidesToScroll: 1,
+                     autoplay: true,
+                     autoplaySpeed: 1500,
+                     arrows: false,
+                     dots: false,
+                     pauseOnHover: false,
+                     prevArrow: false,
+                     nextArrow: false,
+                     responsive: [{
+                         breakpoint: 768,
+                         settings: {
+                         slidesToShow: 3
+                         }
+                     }, {
+                         breakpoint: 520,
+                         settings: {
+                         slidesToShow: 2
+                         }
+                     }]
+                     });
+                 });
+                 </script>                    
+            </div>
+        </div>    
+    </div>
+      <!-- --------------Footer --------------------->
+      <footer class="footer_Priyansh">
+        <div class="container">
+          <div class="row">
+            <div class="footer_Priyansh-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="people.html"></a></li>
+                <li><a href="contact_us.html"></a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">privacy policy</a></li>
+              </ul>
+            </div>
+            <div class="footer_Priyansh-col">
+              <h4>Services</h4>
+              <ul>
+                <li><a href="erp.html">ERB </a></li>
+                <li><a href="edi.html">EDI </a></li>
+                <li><a href="cs.html">Customer Successes</a></li>
+                <li><a href="bia.html">BI&A</a>
+              </ul>
+            </div>
+            <div class="footer_Priyansh-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cx.html">Customer Experience</a></li>
+                <li><a href="our_services_protfolio.html">Our Services Protfolio</a></li>
+                <li><a href="our-qad-edi-team.html">Our QAD & EDI Team</a></li>
+                <li><a href="to:mail"><i class="fa-regular fa-envelope px-1"></i>info.digitusbiz.com</a></li>
+              </ul>
+            </div>
+            <div class="footer_Priyansh-col">
+              <h4>Address</h4>
+              <ul>
+                <li><a href="#">Digitus Business Solutions Pvt., Ltd</a></li>
+                <li><a href="#">242/A, 13th Cross, CMH Road,</a></li>
+                <li><a href="#">Urban Vault, 3rd Floor,</a></li>
+                <li><a href="#">Indiranagar, Bengaluru 560038.</a></li>
+                <li><a href="#"><i class="fa-solid fa-phone px-1"></i> +91 98861 39243</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="Footer_hr">
+        <div class="style-0">
+          <div class="style-1">
+            <a href="#" class="style-2"><img src="./assets/digituslogo/footerlogo.png" alt="" class="style-3" /></a>
+          </div>
+          <div class="style-4">Copyright © 2024 Digitus software private limited. All Rights Reserved.
+          </div>
+          <div class="style-5">
+            <!-- php work -->
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- this script use for animation part -->
+
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+  <script src="./assets/script/index.js"></script>
+  <!-- for customer carousel -->
+  <script src="./assets/script/faq.js"></script>
+  <!-- for home /assetsFaq Part -->
+  <script src="./assets/script/scecondHomeSec.js"></script>
+  <!-- for home /assetsPart -->
+  <script src="./assets/script/handlescroll.js"></script>
+  <!-- for Navba/assetsr Part -->
+  <script>
+    
+     jQuery(document).ready(function($) {        
+         jQuery(".navmenu li .addOption ").hover(function() {
+           jQuery(this).find(".submenu").css({display:"block", transition: "top 2s"});
+         },
+         function () {
+           jQuery(this).find(".submenu").css({display:"none", transition: "all 7s"});
+         });
+ 
+ 
+ 
+           //Stick add css
+           $(window).scroll(function() {    // this will work when your window scrolled.
+ 
+             var height = $(window).scrollTop();  //getting the scrolling height of window
+             if(height  > 90) {
+               $(".firstSectionContainer").addClass("stick_scroll");
+             } else{
+               $(".firstSectionContainer").removeClass("stick_scroll");
+             }
+           });
+ 
+   
+ 
+     });
+     </script>
+
+  <script>
+  (function() {
+    "use strict";
+
+    var carousels = function() {
+      $(".owl-carousel1").owlCarousel({
+        loop: true,
+        center: true,
+        margin: 0,
+        responsiveClass: true,
+        nav: false,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          680: {
+            items: 2,
+            nav: false,
+            loop: false
+          },
+          1000: {
+            items: 3,
+            nav: true
+          }
+        }
+      });
+    };
+
+    (function($) {
+      carousels();
+    })(jQuery);
+  })();
+</script>
+  <!-- --------------Footer part----------------->  
+</body>
+</html>
