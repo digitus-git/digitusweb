@@ -67,7 +67,7 @@ body {
 
 
 .bg-img-footer {
-    background-image: linear-gradient(90deg, rgba(224, 158, 14, .8), rgba(150, 104, 3, .5)), url('../images/IMAGES/footer_contact.webp');
+    background-image: linear-gradient(90deg, rgba(224, 158, 14, .8), rgba(150, 104, 3, .5)), url('../img/footer_contact.webp');
 }
 
 .home_contacter {
@@ -75,7 +75,7 @@ body {
     background-repeat: no-repeat;
     background-position: bottom;
     height: 500px;
-    background-image: linear-gradient(90deg, rgba(224, 158, 14, .8), rgba(150, 104, 3, .5)), url('../images/IMAGES/footer_contact.webp');
+    background-image: linear-gradient(90deg, rgba(224, 158, 14, .8), rgba(150, 104, 3, .5)), url('../img/footer_contact.webp');
 }
 
 .home_contacter {
