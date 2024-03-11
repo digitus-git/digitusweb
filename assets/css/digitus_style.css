@@ -18,7 +18,8 @@
 /*MainMenu*/
 .addOption{position: relative;}
 .addOption span {padding-bottom: 18px;}
-.submenu {min-width: 600px !important; width: 100%; position: absolute;top: 48px !important;margin-bottom: 5px; margin-left: 3px !important;
+.submenu {min-width: 375px !important;
+   width: 100%; position: absolute;top: 48px !important;margin-bottom: 5px; margin-left: 3px !important;
     margin-top: 2px !important;
 }
 .stick_scroll .addOption a {text-decoration: none; color:#eb9018;}
